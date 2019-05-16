@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="CSS/demo.css">
+    <script>
+        window.onload=function(ev){
+            var banners = document.querySelectorAll(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+                if (num == 2) {
+                    num = 0;
+                }
+                for (var i = 0; i < banners.length; i++) {
+                    banners[i].style.display = "none"
+                    btns[i].style.background="#000"
+                }
+                banners[num].style.display = "block";
+                btns[num].style.background="orange"
+                num++
+            },1000)
+        }
+    </script>
+</head>
+<body>
+<!-- header-->
+    <header>
+        <div class="logo"></div>
+        <img src="./imgs/code.jpg" alt="" width="810" height="70">
+    </header>
+<!-- 导航-->
+    <div class="box">
+        <div class="con">
+            <div class="left">
+                <a href="" class="active">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航咨询</a>
+                <a href="">民航问答</a>
+            </div>
+            <div class="right">
+                <a href="" class="login">登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心</a>
+                <a href="" class="sanjiao"></a>
+            </div>
+        </div>
+    </div>
+<!-- 热门城市-->
+    <div class="hot">
+        <span>热门城市：</span>
+        <a href="">深圳</a>
+        <a href="">北京</a>
+        <a href="">上海</a>
+        <a href="">广州</a>
+        <a href="">南京</a>
+        <a href="">天津</a>
+        <a href="">武汉</a>
+        <a href="">长沙</a>
+        <a href="">昆明</a>
+        <a href="">贵阳</a>
+        <a href="">成都</a>
+        <a href="">重庆</a>
+        <a href="">海口</a>
+        <a href="">哈尔滨</a>
+        <a href="">更多</a>
+    </div>
+<!-- 轮播-->
+    <div class="wheel-box">
+        <div class="banner1 banner"></div>
+        <div class="banner2 banner"></div>
+        <div class="btns">
+            <div class="btn1 select"></div>
+            <div class="btn2"></div>
+        </div>
+    </div>
+<!--热门航线预定-->
+    <div class="hang">
+        <span>热门航线预定</span>
+        <div class="right">
+            <a href="" class="active">全国</a>
+            <a href="">深圳</a>
+            <a href="">北京</a>
+            <a href="">上海</a>
+            <a href="">广州</a>
+            <a href="">武汉</a>
+            <a href="">成都</a>
+            <a href="">海口</a>
+            <a href="">重庆</a>
+            <a href="">沈阳</a>
+        </div>
+    </div>
+
+    <div class="ticket-list">
+         <div class="ticket1 ticket">
+        <div class="name">
+            <span class="start">海口</span>
+            <span class="arrow"></span>
+            <span class="end">郑州</span>
+        </div>
+        <div class="time">12月6日</div>
+        <div class="money">
+            <span class="t1"></span>
+            <span class="t2">票价:</span>
+            <span class="t3">￥</span>
+            <span class="t4">150</span>
+        </div>
+    </div>
+        <div class="ticket2 ticket">
+            <div class="name">
+                <span class="start">海口</span>
+                <span class="arrow"></span>
+                <span class="end">长沙</span>
+            </div>
+            <div class="time">12月6日</div>
+            <div class="money">
+                <span class="t1"></span>
+                <span class="t2">票价:</span>
+                <span class="t3">￥</span>
+                <span class="t4">150</span>
+            </div>
+        </div><div class="ticket3 ticket">
+        <div class="name">
+            <span class="start">武汉</span>
+            <span class="arrow"></span>
+            <span class="end">神农架</span>
+        </div>
+        <div class="time">12月6日</div>
+        <div class="money">
+            <span class="t1"></span>
+            <span class="t2">票价:</span>
+            <span class="t3">￥</span>
+            <span class="t4">150</span>
+        </div>
+    </div>
+        <div class="ticket4 ticket">
+            <div class="name">
+                <span class="start">银川</span>
+                <span class="arrow"></span>
+                <span class="end">昆明</span>
+            </div>
+            <div class="time">12月6日</div>
+            <div class="money">
+                <span class="t1"></span>
+                <span class="t2">票价:</span>
+                <span class="t3">￥</span>
+                <span class="t4">150</span>
+            </div>
+        </div>
+        <div class="ticket5 ticket">
+            <div class="name">
+                <span class="start">太原</span>
+                <span class="arrow"></span>
+                <span class="end">昆明</span>
+            </div>
+            <div class="time">12月6日</div>
+            <div class="money">
+                <span class="t1"></span>
+                <span class="t2">票价:</span>
+                <span class="t3">￥</span>
+                <span class="t4">150</span>
+            </div>
+        </div>
+        <div class="ticket6 ticket">
+            <div class="name">
+                <span class="start">南京</span>
+                <span class="arrow"></span>
+                <span class="end">上海浦东</span>
+            </div>
+            <div class="time">12月6日</div>
+            <div class="money">
+                <span class="t1"></span>
+                <span class="t2">票价:</span>
+                <span class="t3">￥</span>
+                <span class="t4">150</span>
+            </div>
+        </div>
+        <div class="ticket7 ticket">
+            <div class="name">
+                <span class="start">西安</span>
+                <span class="arrow"></span>
+                <span class="end">上海浦东</span>
+            </div>
+            <div class="time">12月6日</div>
+            <div class="money">
+                <span class="t1"></span>
+                <span class="t2">票价:</span>
+                <span class="t3">￥</span>
+                <span class="t4">150</span>
+            </div>
+        </div><div class="ticket8 ticket">
+            <div class="name">
+                <span class="start">合肥</span>
+                <span class="arrow"></span>
+                <span class="end">海口</span>
+            </div>
+        <div class="time">12月6日</div>
+        <div class="money">
+            <span class="t1"></span>
+            <span class="t2">票价:</span>
+            <span class="t3">￥</span>
+            <span class="t4">150</span>
+        </div>
+    </div>
+        <div class="ticket9 ticket">
+            <div class="name">
+                <span class="start">天津</span>
+                <span class="arrow"></span>
+                <span class="end">三亚</span>
+            </div>
+            <div class="time">12月6日</div>
+            <div class="money">
+                <span class="t1"></span>
+                <span class="t2">票价:</span>
+                <span class="t3">￥</span>
+                <span class="t4">150</span>
+            </div>
+        </div>
+        <div class="ticket10 ticket">
+            <div class="name">
+                <span class="start">银川</span>
+                <span class="arrow"></span>
+                <span class="end">大连</span>
+            </div>
+            <div class="time">12月6日</div>
+            <div class="money">
+                <span class="t1"></span>
+                <span class="t2">票价:</span>
+                <span class="t3">￥</span>
+                <span class="t4">150</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
